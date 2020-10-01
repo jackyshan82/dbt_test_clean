@@ -1055,3 +1055,87 @@ For upgrading instructions, consult the documentation:
 2020-10-01 21:51:42.085081 (Thread-20): handling status request
 2020-10-01 21:51:42.086923 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'be842407-00db-4456-a1a0-495ce2733921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee0819fef0>]}
 2020-10-01 21:51:42.089323 (Thread-20): sending response (<Response 4832 bytes [200 OK]>) to 10.0.8.15
+2020-10-01 21:51:46.781694 (MainThread): writing 1 spans (enabled:True), 167 additional messages skipped
+2020-10-01 21:51:46.781903 (MainThread): 
+      name jinja2.compile
+        id 13438331516828785789
+  trace_id 7172256832058335027
+ parent_id None
+   service None
+  resource <memory>
+      type template
+     start 1601589106.780939
+       end 1601589106.7815301
+  duration 0.000591s
+     error 0
+      tags 
+           jinja2.template_name:<memory>
+           runtime-id:6dfa3886a29b433da23dd1db4a65a787, 175 additional messages skipped
+2020-10-01 21:51:46.820221 (MainThread): Connection 'model.jaffle_shop.customer_orders' was properly closed.
+2020-10-01 21:51:46.881562 (Thread-21): Parsing macros/test.sql
+2020-10-01 21:51:46.882155 (Thread-21): Parsing macros/adapters.sql
+2020-10-01 21:51:46.922088 (Thread-21): Parsing macros/catalog.sql
+2020-10-01 21:51:46.924256 (Thread-21): Parsing macros/materializations/incremental.sql
+2020-10-01 21:51:46.935287 (Thread-21): Parsing macros/materializations/merge.sql
+2020-10-01 21:51:46.937508 (Thread-21): Parsing macros/materializations/table.sql
+2020-10-01 21:51:46.941732 (Thread-21): Parsing macros/materializations/view.sql
+2020-10-01 21:51:46.944418 (Thread-21): Parsing macros/core.sql
+2020-10-01 21:51:46.948318 (Thread-21): Parsing macros/materializations/helpers.sql
+2020-10-01 21:51:46.959051 (Thread-21): Parsing macros/materializations/common/merge.sql
+2020-10-01 21:51:46.981114 (Thread-21): Parsing macros/materializations/table/table.sql
+2020-10-01 21:51:46.993233 (Thread-21): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-10-01 21:51:47.002305 (Thread-21): Parsing macros/materializations/view/view.sql
+2020-10-01 21:51:47.013947 (Thread-21): Parsing macros/materializations/snapshot/snapshot.sql
+2020-10-01 21:51:47.048312 (Thread-21): Parsing macros/materializations/snapshot/strategies.sql
+2020-10-01 21:51:47.065802 (Thread-21): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-10-01 21:51:47.067734 (Thread-21): Parsing macros/materializations/seed/seed.sql
+2020-10-01 21:51:47.089525 (Thread-21): Parsing macros/materializations/incremental/incremental.sql
+2020-10-01 21:51:47.096037 (Thread-21): Parsing macros/materializations/incremental/helpers.sql
+2020-10-01 21:51:47.098122 (Thread-21): Parsing macros/etc/query.sql
+2020-10-01 21:51:47.099279 (Thread-21): Parsing macros/etc/get_custom_schema.sql
+2020-10-01 21:51:47.101491 (Thread-21): Parsing macros/etc/get_custom_alias.sql
+2020-10-01 21:51:47.102527 (Thread-21): Parsing macros/etc/datetime.sql
+2020-10-01 21:51:47.111901 (Thread-21): Parsing macros/etc/get_custom_database.sql
+2020-10-01 21:51:47.113713 (Thread-21): Parsing macros/etc/is_incremental.sql
+2020-10-01 21:51:47.115466 (Thread-21): Parsing macros/adapters/common.sql
+2020-10-01 21:51:47.160509 (Thread-21): Parsing macros/schema_tests/relationships.sql
+2020-10-01 21:51:47.162613 (Thread-21): Parsing macros/schema_tests/unique.sql
+2020-10-01 21:51:47.164478 (Thread-21): Parsing macros/schema_tests/accepted_values.sql
+2020-10-01 21:51:47.167429 (Thread-21): Parsing macros/schema_tests/not_null.sql
+2020-10-01 21:51:47.179959 (Thread-21): Parsing macros/logger/pretty_time.sql
+2020-10-01 21:51:47.184427 (Thread-21): Parsing macros/logger/log_info.sql
+2020-10-01 21:51:47.188696 (Thread-21): Parsing macros/logger/pretty_log_format.sql
+2020-10-01 21:51:47.193511 (Thread-21): Parsing macros/sql/pivot.sql
+2020-10-01 21:51:47.200102 (Thread-21): Parsing macros/sql/star.sql
+2020-10-01 21:51:47.206684 (Thread-21): Parsing macros/sql/surrogate_key.sql
+2020-10-01 21:51:47.213372 (Thread-21): Parsing macros/sql/get_query_results_as_dict.sql
+2020-10-01 21:51:47.219025 (Thread-21): Parsing macros/sql/get_column_values.sql
+2020-10-01 21:51:47.226822 (Thread-21): Parsing macros/sql/groupby.sql
+2020-10-01 21:51:47.232285 (Thread-21): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2020-10-01 21:51:47.246092 (Thread-21): Parsing macros/sql/nullcheck_table.sql
+2020-10-01 21:51:47.251276 (Thread-21): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2020-10-01 21:51:47.255850 (Thread-21): Parsing macros/sql/get_relations_by_pattern.sql
+2020-10-01 21:51:47.262170 (Thread-21): Parsing macros/sql/get_relations_by_prefix.sql
+2020-10-01 21:51:47.268745 (Thread-21): Parsing macros/sql/safe_add.sql
+2020-10-01 21:51:47.273679 (Thread-21): Parsing macros/sql/unpivot.sql
+2020-10-01 21:51:47.284115 (Thread-21): Parsing macros/sql/generate_series.sql
+2020-10-01 21:51:47.305478 (Thread-21): Parsing macros/sql/nullcheck.sql
+2020-10-01 21:51:47.311440 (Thread-21): Parsing macros/sql/union.sql
+2020-10-01 21:51:47.330393 (Thread-21): Parsing macros/materializations/insert_by_period_materialization.sql
+2020-10-01 21:51:47.369826 (Thread-21): Parsing macros/web/get_url_parameter.sql
+2020-10-01 21:51:47.374752 (Thread-21): Parsing macros/web/get_url_path.sql
+2020-10-01 21:51:47.378062 (AgentWriter): reported 42 traces in 0.00485s, 3 additional messages skipped
+2020-10-01 21:51:47.378271 (AgentWriter): initialized RateSampler, sample 100% of traces, 127 additional messages skipped
+2020-10-01 21:51:47.380635 (Thread-21): Parsing macros/web/get_url_host.sql
+2020-10-01 21:51:47.385550 (Thread-21): Parsing macros/datetime/date_spine.sql
+2020-10-01 21:51:47.393018 (Thread-21): Parsing macros/schema_tests/expression_is_true.sql
+2020-10-01 21:51:47.397928 (Thread-21): Parsing macros/schema_tests/not_constant.sql
+2020-10-01 21:51:47.409702 (Thread-21): Parsing macros/schema_tests/at_least_one.sql
+2020-10-01 21:51:47.414460 (Thread-21): Parsing macros/schema_tests/equality.sql
+2020-10-01 21:51:47.421782 (Thread-21): Parsing macros/schema_tests/test_not_null_where.sql
+2020-10-01 21:51:48.137465 (Thread-22): handling status request
+2020-10-01 21:51:48.137971 (Thread-22): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'be842407-00db-4456-a1a0-495ce2733921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee08178a90>]}
+2020-10-01 21:51:48.144905 (Thread-22): sending response (<Response 16508 bytes [200 OK]>) to 10.0.20.146
+2020-10-01 21:52:16.692519 (Thread-23): handling status request
+2020-10-01 21:52:16.694403 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'be842407-00db-4456-a1a0-495ce2733921', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee08b84cf8>]}
+2020-10-01 21:52:16.701258 (Thread-23): sending response (<Response 16508 bytes [200 OK]>) to 10.0.5.233
